@@ -1,0 +1,53 @@
+html{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(12, 110, 81, 0.384);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    margin: 0;
+}
+
+.container-title{
+    background-color: beige;
+
+}
+.title{
+    font-size: 40px;
+    color: rgb(8, 104, 29);
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+}
+
+.bernardeli{
+    width: 100vw;
+    height: 10vw;
+}
+
+.doguinho{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.doguinho img{
+    width: 50vw;
+    height: 10vw;
+    transition: 1s;
+    &:hover{
+        width: 50vw;
+        height: 30vw;
+        transition: 1s;  
+    }
+}
+
+.main-text{
+    flex-direction: column;
+    display: flex;
+    margin: 0 auto ;
+    border: 1px black solid;
+    width: fit-content;
+    height: fit-content;
+}
+
