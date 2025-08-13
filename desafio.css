@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    padding: 20px;
+}
+
+.quadradoAzul{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(78, 78, 224);
+}
+
+.quadradinho{
+    background-color: rgb(210, 162, 30);
+    width: 33%;
+    height: 100%;
+}
+
+.linha-quadrado-azul{
+    height: 33.3%;
+    display: flex;
+    justify-content: center;
+
+} 
+
+.espaco{
+    display: flex;
+    justify-content: space-between;
+}
+
+.espelho{
+    display: flex;
+    justify-content: flex-end ;
+}
+
+.linha1{
+    display: flex;
+    justify-content: space-between;
+    height: 33.3%;
+}
+
+.linha2{
+    display: flex;
+    justify-content: space-between;
+    height: 33.3%;
+}
+
+.linha3{
+    display: flex;
+    justify-content: space-between;
+    height: 33.3%;
+}
+
+
+
+
+
