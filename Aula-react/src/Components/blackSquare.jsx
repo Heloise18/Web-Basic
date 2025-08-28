@@ -1,9 +1,8 @@
 import './blackSquare.css'
 
-export const blackSquare = () => {
+export const BlackSquare = () => {
     return(
-    <div className="square">
-        quadrado preto
+    <div className="squareB">
     </div>
     )
 }

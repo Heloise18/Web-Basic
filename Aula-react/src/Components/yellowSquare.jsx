@@ -1,9 +1,8 @@
 import './yellowSquare.css'
 
-export const yellowSquare = () => {
+export const YellowSquare = () => {
     return(
-    <div className="square">
-        quadrado amarelo
+    <div className="squareA">
     </div>
     )
 }

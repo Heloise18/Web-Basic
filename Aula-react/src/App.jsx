@@ -1,24 +1,23 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { HelloWorld } from './Components/HelloWorld'
-import { InputHelo } from './Components/InputHelo'
-import { purpleSquare } from './Components/purpleSquare'
-import { yellowSquare } from './Components/yellowSquare'
-import { blackSquare } from './Components/blackSquare'
 
+import './App.css'
+
+// import { PurpleSquare } from "./Components/purpleSquare";
+// import { YellowSquare } from "./Components/yellowSquare";
+// import { BlackSquare } from "./Components/blackSquare";
+
+import { Square } from './Components/Square';
 
 const App = () => {
   return (
     <>
-    <HelloWorld />
-    <InputHelo/>
-    <purpleSquare/>
-    <blackSquare/>
-    <yellowSquare />
+    <div className='body'>
+      {/* <PurpleSquare />
+      <YellowSquare />
+      <BlackSquare /> */}
 
-
+      <Square cor="pink"/>
+    </div>
     </>
   )
 }
