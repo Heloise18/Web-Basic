@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
-
-
+import { BrowserRouter } from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -12,6 +11,7 @@ function App() {
     console.log(`o novo estado é ${num}`)
   },[num])
 
+
   return (
     <>
  
@@ -21,6 +21,8 @@ function App() {
         </button>
       </div>
       
+
+      <BrowserRouter></BrowserRouter>
     </>
   )
 }
