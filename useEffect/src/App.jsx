@@ -1,36 +1,36 @@
 import { useEffect, useState } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 import './App.css'
-import{ Home } from './components/Home'
-import{ Sobre } from './components/Sobre'
-
+import{ Home } from './Pages/Home'
+import{ Sobre } from './Pages/Sobre'
+import { Profile } from './Pages/profile'
 
 function App() {
-  const [num, setNum] = useState(0)
-  useEffect (() => {
-    console.log("O conteudo da pagina foi alterado")
-    console.log(`o novo estado é ${num}`)
-  },[num])
+  // const [num, setNum] = useState(0)
+  // useEffect (() => {
+  //   console.log("O conteudo da pagina foi alterado")
+  //   console.log(`o novo estado é ${num}`)
+  // },[num])
+
+
 
 
   return (
     <>
- 
       
       <BrowserRouter>
+      <nav>            
+        <Link to={'/'}>Home </Link> 
+        <Link to={'/sobre'}>Sobre </Link> 
+
+      </nav>
       <Routes>
-        <Route path='/home' element={<Home/>}> </Route>
+        <Route path='/' element={<Home/>}> </Route>
         <Route path='/sobre' element={<Sobre/>}> </Route>
+        <Route path='/profile/:nome' element={<Profile/>}> </Route>
       </Routes>
       </BrowserRouter>
     
-      <div className="card">
-        <button onClick={() => setNum((num) => num + 1)}>
-          clique aqui <h1>{num}</h1>
-        </button>
-      </div>
-      
-
     </>
 
     
@@ -38,3 +38,11 @@ function App() {
 }
 
 export default App
+
+
+      // {/* <div className="card">
+      //   <button onClick={() => setNum((num) => num + 1)}>
+      //     clique aqui <h1>{num}</h1>
+      //   </button>
+      // </div>
+      //  */}
