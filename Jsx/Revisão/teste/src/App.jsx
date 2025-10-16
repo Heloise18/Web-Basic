@@ -13,6 +13,14 @@ function Human({nome, sobrenome, idade}){
   )
 }
 
+function Button({color, text, height, width}){
+  return(
+  <>
+    <button style={{backgroundColor: color, height:height, width: width}} >{text}</button>
+  </>  
+  )
+}
+
 
 function App() {
   const [count, setCount] = useState(0) 
@@ -44,6 +52,9 @@ function App() {
 
     {/* PROPS */}
     <Human nome="HeloLinda" sobrenome="FazChinello" idade="17"/>
+    <Button color={'blue'} height={'50px'} width={'90px'}  text={'Thaís linda!'}/> 
+    <Button color={'red'} height={'50px'} width={'90px'}  text={'Thaís linda!'}/> 
+    <Button color={'green'} height={'50px'} width={'90px'}  text={'Thaís linda!'}/> 
     
     </>
   )
