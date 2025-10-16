@@ -1,10 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { useEffect } from 'react'
 
-
+// Props
 function Human({nome, sobrenome, idade}){
   return(
   <>
@@ -14,6 +12,7 @@ function Human({nome, sobrenome, idade}){
   </>  
   )
 }
+
 
 function App() {
   const [count, setCount] = useState(0) 
@@ -35,13 +34,15 @@ function App() {
   <input type="text" onChange={(e) => setText(e.target.value)} />
   <h1>{text}</h1>
 
-    <br />
+    <br/>
  
     <button onClick={() => setIsShow(!IsShow)}>Disappear</button>
     {IsShow &&
       <div style={{backgroundColor:  'purple', width:'100px' , height:'100px'}}> </div>
 
     }
+
+    {/* PROPS */}
     <Human nome="HeloLinda" sobrenome="FazChinello" idade="17"/>
     
     </>
